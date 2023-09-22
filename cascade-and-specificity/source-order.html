@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Cascades</title>
+        <style>
+            * {
+                font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+            }
+
+            h1 {
+                font-size:3rem;
+                margin-bottom:0;
+            }
+
+            /* SPECIFIC */
+            section {
+                border:1px solid #aaa;
+                padding:3vh;
+                border-radius:3vh;
+            }
+
+            p {
+                color:yellow;
+            }
+
+            p {
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <article>
+                <h1>CSS Cascades and Specificity</h1>
+                <p>A lot of things can happen if you don't pay attention to <b>specificity</b> rules.</p>
+                <hr>
+
+                <section>
+                    <h3>Order</h3>
+                    <p>If two or more style declarations were made for the same element, the more recent style declarations will be followed.</p>
+                    <p>In this case, the later declaration colored these paragraphs yellow.</p>
+                    <p>However, a later declaration colored these paragraphs red.</p>
+                </section>
+            </article>
+        </main>
+    </body>
+</html>
