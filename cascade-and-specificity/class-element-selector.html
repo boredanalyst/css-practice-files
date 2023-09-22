@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Cascades</title>
+        <style>
+            * {
+                font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+            }
+
+            h1 {
+                font-size:3rem;
+                margin-bottom:0;
+            }
+
+            /* SPECIFIC */
+            section {
+                border:1px solid #aaa;
+                padding:3vh;
+                border-radius:3vh;
+                color:orange;
+            }
+
+            p {
+                color:blue;
+            }
+
+            .redPara {
+                color:white;
+                padding:1vh;
+                font-weight:bold;
+                background-color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <article>
+                <h1>CSS Cascades and Specificity</h1>
+                <p>A lot of things can happen if you don't pay attention to <b>specificity</b> rules.</p>
+                <hr>
+
+                <section>
+                    <h3>Class Vs Element</h3>
+                    <p>Class selectors are prioritized over element selectors</p>
+                    <p class="redPara">A style declaration was made against all paragraphs to style them blue,
+                        but a style declaration was made against the class "redPara".
+                    </p>
+                    <p>Therefore, the preceeding paragraph was styled differently.</p>
+                </section>
+            </article>
+        </main>
+    </body>
+</html>
