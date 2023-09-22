@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Box Model</title>
+        <style>
+            * {
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            h1 {
+                font-size:3rem;
+                margin-bottom:0;
+            }
+
+            h3 {
+                font-size:1.2rem;
+            }
+
+            /* SPECIFIC */
+            div {
+                background-color:red;
+                padding:2vh;
+                color:white;
+                font-weight:bold;
+            }
+
+            span {
+                background-color:red;
+                padding:2vh;
+                color:white;
+                font-weight:bold;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <article>
+                <hgroup>
+                    <h1>Box Model</h1>
+                    <p>Each element in the document is placed in a <em>box</em>.</p>
+                </hgroup>
+                
+                <hr>
+                
+                <h3>Displays</h3>
+                <p>Any element can be either inline, block, or inline-block.</p>
+                <p>Some elements are naturally inline or block, but you can 
+                    edit this property through CSS.</p>
+                
+                <h3>Block Properties</h3>
+                <p>Block properties are always situated alone in one line.</p>
+                <p>They also span the entire line.</p>
+                <div>I am a DIV and I am a block element.</div>
+
+                <h3>Inline Properties</h3>
+                <p>Inline elements are situated in the same line as other elements.</p>
+                <p>Their width is dictated by the width of their content.</p>
+                <p>This is a <span>span</span> element, which is inline.</p>
+            </article>
+        </main>
+    </body>
+</html>
