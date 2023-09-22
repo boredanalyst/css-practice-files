@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Box Model</title>
+        <style>
+            * {
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            h1 {
+                font-size:3rem;
+                margin-bottom:0;
+            }
+
+            h3 {
+                font-size:1.2rem;
+            }
+
+            /* SPECIFIC */
+            div {
+                background-color:red;
+                padding:2vh;
+                color:white;
+                font-weight:bold;
+            }
+
+            div:first-of-type {
+                width:50%;
+                height:20rem;
+            }
+
+            div:nth-of-type(2) {
+                margin-top:-10rem;
+                background-color:yellow;
+                color:black;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <article>
+                <hgroup>
+                    <h1>Box Model</h1>
+                    <p>Each element in the document is placed in a <em>box</em>.</p>
+                </hgroup>
+                
+                <hr>
+                <h3>Margins</h3>
+                <p>Margin pushes away other elements from the box.</p>
+                <p>The margin is <strong>not</strong> included in the width
+                    or height of the element.</p>
+                <hr>
+
+                <div>
+                    I am a DIV element.
+                    I have another div on top of me.
+                </div>
+
+                <div>
+                    I am a DIV element with a negative margin.
+                    Therefore, I move towards other elements.
+                </div>
+            </article>
+        </main>
+    </body>
+</html>
