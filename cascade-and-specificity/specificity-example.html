@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Cascades</title>
+        <style>
+            * {
+                font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+            }
+
+            h1 {
+                font-size:3rem;
+                margin-bottom:0;
+            }
+
+            /* SPECIFIC */
+            section {
+                border:1px solid #aaa;
+                padding:3vh;
+                border-radius:3vh;
+            }
+
+            table {
+                border-collapse:collapse;
+            }
+
+            table,td,th,tr {
+                border:#aaa 1px solid;
+                padding:1vh;
+            }
+            
+
+            td[colspan="3"] {
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <article>
+                <h1>CSS Cascades and Specificity</h1>
+                <p>A lot of things can happen if you don't pay attention to <b>specificity</b> rules.</p>
+                <hr>
+
+                <section>
+                    <h3>Specificity Samples</h3>
+                    <p>Here are some examples of specificity scoring.</p>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td colspan=3>Selectors</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Declarations</th>
+                            <th>Identifier</th>
+                            <th>Class</th>
+                            <th>Element</th>
+                            <th>Specificity</th>
+                        </tr>
+                        <tr>
+                            <td>h1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>(0,0,1)</td>
+                        </tr>
+                        <tr>
+                            <td>h1 + p::first-letter</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>(0,0,3)</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </main>
+    </body>
+</html>
