@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS 2D Transforms</title>
+        <style>
+            * {
+                font-family:Arial, Helvetica, sans-serif;
+                transition:all ease-in-out 150ms;
+            }
+
+            body {
+                display:flex;
+            }
+
+            main {
+                margin:auto;
+                width:60%;
+            }
+
+            h1 {
+                font-size:15vh;
+                margin-bottom:0;
+            }
+
+            p {
+                margin-top:0;
+            }
+
+            article > section {
+                display:flex;
+                gap:1vh;
+                justify-content:space-evenly;
+            }
+
+            span {
+                background-color:white;
+                box-shadow:0.1vh 0.1vh hsl(0,50,0,0.5);
+                border-radius:2vh;
+                padding:8vh;
+                font-size:3vh;
+                color:black;
+            }
+
+            span:hover {
+                transform:scale(1.5);
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>2D Transforms</h1>
+            <p>CSS allows you to transform properties of objects.</p>
+            <p>Scale allows you to change the size of things.</p>
+            <hr align="left" width="50%">
+            <article>
+                <h2>We offer the following services.</h2>
+                <section>
+                    <span>
+                        Cleaning
+                    </span>
+                    <span>
+                        Decoration
+                    </span>
+                    <span>
+                        Renovation
+                    </span>
+                </section>
+            </article>
+        </main>
+    </body>
+</html>
