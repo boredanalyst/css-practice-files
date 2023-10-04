@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Practice Files</title>
+        <style>
+
+            * {
+                font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+                transition:all ease-in-out 120ms;
+            }
+
+            header {
+                display:flex;
+            }
+
+            header > h1 {
+                margin:auto;
+                font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+                border-bottom:0.1vh solid black;
+                padding:0.2vh;
+            }
+
+            main {
+                display:flex;
+            }
+
+            article {
+                margin:auto;
+                width:60%;
+            }
+
+            article h1 {
+                font-size:8rem;
+                font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+                font-style:italic;
+                margin-bottom:0;
+            }
+
+            article h3 {
+                font-size:2.3rem;
+                font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+                font-style:italic;
+                margin-bottom:0;
+            }
+
+            div {
+                height:20vh;
+                width:20vh;
+                padding:1vh;
+                background-color:salmon;
+                color:white;
+                margin:2vh;
+            }
+
+            div:first-of-type {
+                border:1vh solid green;
+            }
+
+            div:nth-of-type(2) {
+                border:1vh dotted green;
+            }
+
+            div:nth-of-type(3) {
+                border:1vh green;
+                border-style:groove;
+            }
+
+            div:nth-of-type(4) {
+                border:1vh green;
+                border-style:double;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>frontend me</h1>
+        </header>
+        <main>
+            <article>
+                <h1>Border Style</h1>
+                <p>Setting of border styles.</p>
+                <hr>
+                <div>
+                    I have a solid border.
+                </div>
+
+                <div>
+                    I have a dotted border.
+                </div>
+
+                <div>
+                    I have a grooved border.
+                </div>
+
+                <div>
+                    I have a double border.
+                </div>
+
+            </article>
+        </main>
+    </body>
+</html>
