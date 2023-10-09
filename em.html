@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Relative Measurements</title>
+        <style>
+            * {
+                font-family:Arial, Helvetica, sans-serif;
+            }
+
+            body {
+                display:flex;
+            }
+
+            h1 {
+                font-size:13vh;
+                margin-bottom:0;
+            }
+
+            h3 {
+                font-size:5vh;
+                text-align:center;
+            }
+
+            main {
+                margin:auto;
+                width:60%;
+            }
+
+            hr {
+                margin:2vh;
+            }
+
+            section {
+                padding:2vh;
+                border:0.1vh dotted red;
+                margin:1vh 0;
+                font-size:2em; 
+            }
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Relative Measurements</h1>
+            <p>These are measurements that appear differently based on specific factors.</p>
+            <hr align="center" width="50%">
+            <article>
+                <h3>Em</h3>
+                <p>One <b>em</b> is equal to the fontsize measurement by the element's containing element. </p>
+                <p>All of these sections have a fontsize of <strong>2 em</strong>.</p>
+                <section>
+                    I am the first section.
+                    <section>
+                        I am the second section inside the first section.
+                        <section>
+                            I am the alast section inside the second section.
+                        </section>
+                    </section>
+                    
+                </section>
+            </article>
+        </main>
+    </body>
+
+</html>
