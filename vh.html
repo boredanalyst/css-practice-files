@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Relative Measurements</title>
+        <style>
+            * {
+                font-family:Arial, Helvetica, sans-serif;
+            }
+
+            html {
+                font-size:100%;
+            }
+
+            body {
+                display:flex;
+            }
+
+            h1 {
+                font-size:13vh;
+                margin-bottom:0;
+            }
+
+            h3 {
+                font-size:5vh;
+                text-align:center;
+            }
+
+            main {
+                margin:auto;
+                width:60%;
+            }
+
+            hr {
+                margin:2vh;
+            }
+
+            section {
+                display:flex;
+                justify-content:space-evenly;
+            }
+
+            span {
+                padding:1vh;
+                color:black;
+                display:inline-block;
+                background-color:yellow;
+            }
+
+            section span:first-of-type {
+                height:20vh;
+            }
+
+            section span:nth-of-type(2) {
+                height:30vh;
+            }
+
+            section span:nth-of-type(3) {
+                height:40vh;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Relative Measurements</h1>
+            <p>These are measurements that appear differently based on specific factors.</p>
+            <hr align="center" width="50%">
+            <article>
+                <h3>VH / Viewport Height</h3>
+                <p>One <b>vh</b> is equal to 1% of the viewport's height.</p>
+                <p>These spans have differing heights based on viewport's height.</p>
+                <p>Viewport measurements are responsive to the screen size.</p>
+                <section>
+                    <span>I have a height of 20vh</span>
+                    <span>I have a height of 30vh</span>
+                    <span>I have a height of 40vh</span>
+                </section>
+            </article>
+        </main>
+    </body>
+
+</html>
