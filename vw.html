@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Relative Measurements</title>
+        <style>
+            * {
+                font-family:Arial, Helvetica, sans-serif;
+            }
+
+            html {
+                font-size:100%;
+            }
+
+            body {
+                display:flex;
+            }
+
+            h1 {
+                font-size:13vh;
+                margin-bottom:0;
+            }
+
+            h3 {
+                font-size:5vh;
+                text-align:center;
+            }
+
+            main {
+                margin:auto;
+                width:60%;
+            }
+
+            hr {
+                margin:2vh;
+            }
+
+            section {
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items:center;
+                gap: 1vh;
+            }
+
+            span {
+                padding:1vh;
+                color:black;
+                display:inline-block;
+                background-color:yellow;
+                text-align:center;
+            }
+
+            section span:first-of-type {
+                width:20vw;
+            }
+
+            section span:nth-of-type(2) {
+                width:30vw;
+            }
+
+            section span:nth-of-type(3) {
+                width:40vw;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Relative Measurements</h1>
+            <p>These are measurements that appear differently based on specific factors.</p>
+            <hr align="center" width="50%">
+            <article>
+                <h3>VW / Viewport Width</h3>
+                <p>One <b>vw</b> is equal to 1% of the viewport's width.</p>
+                <p>These spans have differing heights based on viewport's height.</p>
+                <p>Viewport measurements are responsive to the screen size.</p>
+                <section>
+                    <span>I have a width of 20vh</span>
+                    <span>I have a width of 30vh</span>
+                    <span>I have a width of 40vh</span>
+                </section>
+            </article>
+        </main>
+    </body>
+
+</html>
