@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Class Selectors</title>
+        <style>
+            * {
+                color:black;
+            }
+
+            html {
+                background-color:white;
+            }
+
+            main {
+                display:flex;
+            }
+
+            article {
+                margin:auto;
+            }
+
+            article h1 {
+                font-size:8vh;
+                margin-bottom:0;
+            }
+
+            li {
+                padding:1vh;
+                list-style:none;
+            }
+
+            .red {
+                background-color:red;
+                color:white;
+            }
+
+            #myListItem {
+                background-color:yellow;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <article>
+                <h1>Introduction to Selectors</h1>
+                <i>Selectors are a way for you to specifically target elements in your webpage and style them accordingly.</i>
+                <section>
+                    <h3>ID Selectors</h3>
+                    <p>The last item on this list has the id 'myListItem'</p>
+                    <p>The style only affects this list item because of the ID.</p>
+                    <p>Remember that only one item can only have a particular ID.</p>
+                    <section class="sample">
+                        <ol>
+                            <li class="red">I am the first item with a class of 'red'</li>
+                            <li>I am the second item.</li>
+                            <li id="myListItem">I am the third item with the id 'myListItem'</li>
+                        </ol>
+                    </section>
+                </section>
+            </article>
+        </main>
+    </body>
+</html>
