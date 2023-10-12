@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Class Selectors</title>
+        <style>
+            * {
+                color:black;
+            }
+
+            html {
+                background-color:white;
+            }
+
+            main {
+                display:flex;
+            }
+
+            article {
+                margin:auto;
+            }
+
+            article h1 {
+                font-size:8vh;
+                margin-bottom:0;
+            }
+
+            li {
+                padding:1vh;
+                list-style:none;
+            }
+
+            .red {
+                background-color:red;
+                color:white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <article>
+                <h1>Introduction to Selectors</h1>
+                <i>Selectors are a way for you to specifically target elements in your webpage and style them accordingly.</i>
+                <section>
+                    <h3>Class Selectors</h3>
+                    <p>The first in the following list has a class of 'red'.</p>
+                    <p>You can style elements using the class they have.</p>
+                    <p>Remember that multiple elements can have the same class.</p>
+                    <section class="sample">
+                        <ol>
+                            <li class="red">I am the first item with a class of 'red'</li>
+                            <li>I am the second item.</li>
+                            <li>I am the third item.</li>
+                        </ol>
+                    </section>
+                </section>
+            </article>
+        </main>
+    </body>
+</html>
